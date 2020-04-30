@@ -60,7 +60,10 @@ try:
         youtubeEmbedId = row[3]
         print(title)
         if youtubeEmbedId == 'bTqVqk7FSmY':
-            youtubeEmbedId = get_embedId(driver, title)
+            try:
+                youtubeEmbedId = get_embedId(driver, title)
+            except:
+                continue
             sql1 = "UPDATE movies SET youtubeEmbedId = '%s' WHERE movieId = '%s'" % (youtubeEmbedId, movieId)
             try:
                 # 执行SQL语句

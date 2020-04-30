@@ -22,3 +22,5 @@ CREATE TABLE IF NOT EXISTS `movies`(
 );
 
 ALTER TABLE `movies` ADD COLUMN `youtubeEmbedId` VARCHAR (128) DEFAULT 'bTqVqk7FSmY' COMMENT 'youtube embed Id'
+
+ALTER TABLE `movies` ADD COLUMN `imgUrl` VARCHAR (256) DEFAULT 'https://i.ytimg.com/vi/bTqVqk7FSmY/hqdefault.jpg?sqp=-oaymwEZCPYBEIoBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLCuux40l6PQKzR7E2HnI1G8UyKT-w' COMMENT 'youtube thumbnail url'
