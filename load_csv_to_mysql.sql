@@ -1,0 +1,13 @@
+LOAD DATA INFILE '/var/lib/mysql-files//ratings.csv'
+INTO TABLE ratings
+FIELDS TERMINATED BY ','
+ENCLOSED BY '"'
+LINES TERMINATED BY '\n'
+IGNORE 1 ROWS;
+
+LOAD DATA INFILE '/var/lib/mysql-files//movies.csv'
+INTO TABLE movies
+FIELDS TERMINATED BY ','
+ENCLOSED BY '"'
+LINES TERMINATED BY '\n'
+IGNORE 1 ROWS;
